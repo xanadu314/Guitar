@@ -7,4 +7,4 @@ Check more information at: http://bioconductor.org/packages/Guitar/
 
 library(devtools)
 
-install_github("stasaki/Guitar")
+install_github("xanadu314/Guitar")
