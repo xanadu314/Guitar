@@ -1,8 +1,8 @@
 Package: Guitar
 Type: Package
 Title: Guitar
-Version: 2.4.0
-Date: 2019-04-26
+Version: 2.4.1
+Date: 2022-01-06
 Author: Xiao Du, Hui Liu, Lin Zhang, Jia Meng
 Maintainer: Jia Meng <jia.meng@xjtlu.edu.cn>
 Description: The package is designed for visualization 
