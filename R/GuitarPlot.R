@@ -179,11 +179,11 @@ return(densityDataframe)
   samples <- factor(densityCI$group)
   p <- ggplot(densityCI, aes(x = densityCI$x))
   p <- p + geom_line(aes(y = density, colour = samples), alpha = 1, size = 1)
-  p <- p + geom_ribbon(aes(ymin = rep(0, length(density)), ymax = density, colour = samples, fill = samples), alpha = 0.2 )
+  p <- p + geom_ribbon(aes(ymin = rep(0, length(density)), ymax = density, colour = samples, fill = samples), alpha = 0 )
   if (enableCI) {
-    p <- p + geom_line(aes(y = densityCI$confidenceDown, colour = samples),colour="blue", alpha = 0.4, size = 0.3)
-    p <- p + geom_line(aes(y = densityCI$confidenceUp, colour = samples), colour="black",alpha = 0.4, size = 0.3)
-    p <- p + geom_ribbon(aes(ymin = densityCI$confidenceDown, ymax = densityCI$confidenceUp, colour = samples, fill = samples), alpha = 0.2, colour = NA)
+    p <- p + geom_line(aes(y = densityCI$confidenceDown, colour = samples),colour="blue", alpha = 0, size = 0.3)
+    p <- p + geom_line(aes(y = densityCI$confidenceUp, colour = samples), colour="black",alpha = 0, size = 0.3)
+    p <- p + geom_ribbon(aes(ymin = densityCI$confidenceDown, ymax = densityCI$confidenceUp, colour = samples, fill = samples), alpha = 0, colour = NA)
   }
   
   #p <- p + ggtitle(title)
